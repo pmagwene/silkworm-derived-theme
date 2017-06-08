@@ -1,4 +1,4 @@
-;;; silkworm-theme.el --- Light theme with pleasant, low contrast colors.
+;;; silkworm-derived-theme.el --- Light theme with pleasant, low contrast colors.
 
 ;; Copyright (C) 2016 , Martin Haesler
 
@@ -28,7 +28,7 @@
 
 ;;; Code:
 
- (deftheme silkworm)
+ (deftheme silkworm-derived)
  (let ((class '((class color) (min-colors 89)))
        (fg1 "#000000")
        (fg2 "#656565")
@@ -49,7 +49,7 @@
        (warning "#ff1276")
        (warning2 "#ff4d12"))
    (custom-theme-set-faces
-   'silkworm
+   'silkworm-derived
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -245,10 +245,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'silkworm)
+(provide-theme 'silkworm-derived)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; silkworm-theme.el ends here
+;;; silkworm-derived-theme.el ends here
