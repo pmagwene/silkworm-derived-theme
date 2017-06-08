@@ -7,6 +7,7 @@
 ;; Package-Requires: ((emacs "24"))
 ;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
 
+;; Includes minor color tweaks by P. Magwene
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -29,7 +30,7 @@
 
  (deftheme silkworm)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#585858")
+       (fg1 "#000000")
        (fg2 "#656565")
        (fg3 "#737373")
        (fg4 "#808080")
